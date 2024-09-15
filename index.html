@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    <div class="container">
+        <button id="logout-btn" class="btn btn-danger">Logout</button>
+        <h2>Products</h2>
+        <table id="product-table" class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>T/r</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2>Add Product</h2>
+        <form class="form-container">
+            <input type="text" id="title" placeholder="Title" class="form-control my-2">
+            <input type="text" id="description" placeholder="Description" class="form-control my-2">
+            <input type="text" id="price" placeholder="Price" class="form-control my-2">
+            <button type="button" id="add-btn" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
